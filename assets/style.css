@@ -31,11 +31,22 @@ body {
   background-color: #fff;
 }
 
-main{
+/* main{
     background-image: url(/assets/images/background-logo.png);
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+.bg_logo {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: -10;
 }
+
 
 /* NAVIGATION */
 .nav {
@@ -100,7 +111,7 @@ main{
 
 .banner {
     width: 100%;
-    height: 40vh;
+    height: 42vh;
     background-image: url(/assets/images/banner-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -108,11 +119,11 @@ main{
 }
 
 .section {
-    width: 90%;
-    margin: 50px auto;
+    width: 60%;
+    margin: 70px auto;
 }
 
-.section_about {
+.section_about, .section_service, .section_health, .more {
     display: flex;
 }
 
@@ -126,16 +137,50 @@ main{
     line-height: 1.5;
 }
 
+.service, .health, .dedication {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
 .about_h3 {
     margin-top: 50px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
 .about_text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-right: 5rem;
 }
+
+.service, .dedication {
+    padding-left: 5rem;
+}
+
+.health {
+    padding-right: 5rem;
+}
+
+.service_h3, .health_h3, .dedication_h3, .more_h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.service_text, .health_text, .dedication_text, .more_text  {
+    font-size: 1.8rem;
+    padding-right: 0rem;
+}
+
+.more {
+    text-align: center;
+}
+
 
 .about_btn{
     width: 30%;
