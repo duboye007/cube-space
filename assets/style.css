@@ -31,11 +31,22 @@ body {
   background-color: #fff;
 }
 
-main{
+/* main{
     background-image: url(/assets/images/background-logo.png);
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+.bg_logo {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: -10;
 }
+
 
 /* NAVIGATION */
 .nav {
@@ -112,11 +123,11 @@ main{
     margin: 50px auto;
 }
 
-.section_about {
+.section_about, .section_service {
     display: flex;
 }
 
-.about {
+.about, .service {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -126,15 +137,19 @@ main{
     line-height: 1.5;
 }
 
-.about_h3 {
+.about_h3, .service_h3 {
     margin-top: 50px;
     font-size: 3rem;
     font-weight: 500;
 }
 
-.about_text {
+.about_text, .service_text {
     font-size: 2rem;
     padding-right: 5rem;
+}
+
+.service_text {
+    padding-right: 0rem;
 }
 
 .about_btn{
