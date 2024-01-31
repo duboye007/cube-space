@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #444;
   line-height: 1.9;
@@ -38,15 +38,14 @@ body {
 } */
 
 .bg_logo {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    z-index: -10;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: -10;
 }
-
 
 /* NAVIGATION */
 .nav {
@@ -90,8 +89,8 @@ body {
   transition: all 0.3s;
 }
 
-.nav__link:hover{
-    color: #4E79A3;
+.nav__link:hover {
+  color: #4e79a3;
 }
 
 .nav__link--btn:link,
@@ -106,101 +105,137 @@ body {
 .nav__link--btn:active {
   color: inherit;
   background-color: var(--color-primary-darker);
-  color: #4E79A3;
+  color: #4e79a3;
 }
 
 .banner {
-    width: 100%;
-    height: 42vh;
-    background-image: url("/assets/images/banner-img.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 42vh;
+  background-image: url("/assets/images/banner-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section {
-    width: 60%;
-    margin: 70px auto;
+  width: 60%;
+  margin: 70px auto;
 }
 
-.section_about, .section_service, .section_health, .more {
-    display: flex;
+.section_about,
+.section_service,
+.section_health,
+.more {
+  display: flex;
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.5;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-.service, .health, .dedication {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.service,
+.health,
+.dedication {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.5;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .about_h3 {
-    margin-top: 50px;
-    font-size: 2.5rem;
-    font-weight: 500;
+  margin-top: 50px;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
 .about_text {
-    font-size: 1.8rem;
-    padding-right: 5rem;
+  font-size: 1.8rem;
+  padding-right: 5rem;
 }
 
-.service, .dedication {
-    padding-left: 5rem;
+.service,
+.dedication {
+  padding-left: 5rem;
 }
 
 .health {
-    padding-right: 5rem;
+  padding-right: 5rem;
 }
 
-.service_h3, .health_h3, .dedication_h3, .more_h3 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin: 20px 0;
+.service_h3,
+.health_h3,
+.dedication_h3,
+.more_h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 20px 0;
 }
 
-.service_text, .health_text, .dedication_text, .more_text  {
-    font-size: 1.8rem;
-    padding-right: 0rem;
+.service_text,
+.health_text,
+.dedication_text,
+.more_text {
+  font-size: 1.8rem;
+  padding-right: 0rem;
 }
 
 .more {
-    text-align: center;
+  text-align: center;
 }
 
+.about_btn {
+  width: 30%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  border: none;
+  background-color: #91bee5;
+}
 
-.about_btn{
-    width: 30%;
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #000;
-    border: none;
-    background-color: #91BEE5;
+footer {
+    padding: 5rem 0rem;
+  background: #91bee5;
+}
+.flex {
+  width: 40%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.flex img {
+    width: 50px
+}
+
+.location, .mobile, .clock {
+    display: flex;
+    align-items: end;
+}
+
+ .clock .info {
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 480px) {
-    .nav {
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 9rem;
     width: 100%;
     padding: 0 1rem;
-}
+  }
   .nav__logo {
     height: 7rem;
     transition: all 0.3s;
