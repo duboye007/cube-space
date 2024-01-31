@@ -289,6 +289,15 @@ footer {
   margin-left: 10px;
 }
 
+.socials {
+  width: 10%;
+  margin-top: 20px;
+}
+
+.socials img {
+  width: 25px;
+}
+
 @media screen and (max-width: 480px) {
   .nav {
     display: flex;
