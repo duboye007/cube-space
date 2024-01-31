@@ -174,7 +174,8 @@ body {
 .service_h3,
 .health_h3,
 .dedication_h3,
-.more_h3 {
+.more_h3,
+.welcome_h3 {
   font-size: 2.5rem;
   font-weight: 500;
   margin: 20px 0;
@@ -183,7 +184,8 @@ body {
 .service_text,
 .health_text,
 .dedication_text,
-.more_text {
+.more_text,
+.form_text {
   font-size: 1.8rem;
   padding-right: 0rem;
 }
@@ -201,9 +203,67 @@ body {
   border: none;
   background-color: #91bee5;
 }
+.contact_section {
+  margin: 20px auto; 
+}
+
+.section_form {
+  padding: 3rem 3rem;
+  background-color: #91bee573;
+}
+
+.form_info {
+  text-align: center;
+}
+
+.form_h2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+form {
+  width: 80%;
+  margin: 30px auto;
+}
+
+form div {
+  margin: 20px auto;
+}
+
+form label {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+form input, select {
+  display: block;
+  width: 70%;
+  padding: 1rem;
+  border: none;
+}
+
+form textarea {
+  display: block;
+  padding: 1rem;
+  border: none;
+  width: 70%;
+}
+
+
+
+form button {
+  font-weight: lighter;
+  font-size: 1.8rem;
+  background-color: #91bee5;
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  margin: 10px auto;
+  padding: 1rem;
+}
 
 footer {
-    padding: 5rem 0rem;
+  padding: 5rem 0rem;
   background: #91bee5;
 }
 .flex {
@@ -211,20 +271,22 @@ footer {
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
 
 .flex img {
-    width: 50px
+  width: 50px;
 }
 
-.location, .mobile, .clock {
-    display: flex;
-    align-items: end;
+.location,
+.mobile,
+.clock {
+  display: flex;
+  align-items: end;
 }
 
- .clock .info {
-    margin-left: 10px;
+.clock .info {
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 480px) {
