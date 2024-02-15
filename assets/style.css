@@ -120,6 +120,12 @@ body {
 .section {
   width: 60%;
   margin: 70px auto;
+  transition: transform 1s, opacity 1s;
+}
+
+.section__hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .section_about,
