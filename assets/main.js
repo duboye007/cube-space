@@ -38,7 +38,7 @@ const sectionObserver = new IntersectionObserver(showSection, {
   root: null,
   threshold: 0.2,
 });
-
+//  add the class hiden to sections
 sectionsEl.forEach((section) => {
   section.classList.add("section__hidden");
   sectionObserver.observe(section);
