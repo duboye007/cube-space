@@ -44,7 +44,7 @@ const sectionObserver = new IntersectionObserver(showSection, {
 });
 //  add the class hiden to sections
 sectionsEl.forEach((section) => {
-  // section.classList.add("section__hidden");
+  section.classList.add("section__hidden");
   sectionObserver.observe(section);
 });
 
